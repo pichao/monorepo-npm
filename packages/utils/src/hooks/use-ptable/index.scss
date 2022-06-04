@@ -1,0 +1,110 @@
+@import './theme.scss';
+
+.p-ui-searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px 24px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    .p-ui-searchForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        line-height: 50px;
+        .ant-form-item {
+            margin-bottom: 0;
+        }
+    }
+    .ant-btn {
+        height: auto;
+
+        margin-right: 12px;
+    }
+    .ant-btn:nth-last-child(1) {
+        margin-right: 0;
+    }
+    .p-ui-formItemContainer {
+        display: flex;
+        align-items: center;
+        margin-right: 12px;
+        .p-ui-title {
+            color: $main-liner-color;
+            // width: 60px;
+            cursor: pointer;
+            overflow: hidden;
+            white-space: nowrap;
+            // text-overflow: ellipsis;
+            margin-right: 12px;
+            text-align: right;
+        }
+    }
+    .p-ui-searchClassName,
+    .p-ui-addBtn,
+    .p-ui-resetClassName {
+        line-height: 20px;
+        cursor: pointer;
+        border-radius: 8px;
+
+        padding: 8px 24px;
+        height: 36px;
+    }
+    .p-ui-searchClassName,
+    .p-ui-resetClassName {
+        line-height: 20px;
+        border: 1px solid $main-text-color;
+        background: #fff;
+        color: $main-text-color;
+    }
+    .p-ui-searchClassName,
+    .p-ui-addBtn {
+        background: linear-gradient(90deg, #62b3ff 0%, $main-text-color 100%) !important;
+
+        border: none;
+        color: white !important;
+    }
+}
+
+.p-ui-tableContainer {
+    .ant-pagination {
+        position: relative;
+        .ant-pagination-total-text {
+            position: absolute;
+            left: 30px;
+            top: 0;
+            .p-ui-total,
+            .p-ui-pcolor {
+                color: $pagination-number-color;
+            }
+        }
+        .ant-pagination-item-active {
+            background: $main-text-color;
+            border-radius: 50%;
+        }
+        .ant-pagination-item-active a {
+            color: white;
+        }
+    }
+    .ant-table-thead > tr > th {
+        white-space: nowrap;
+        background-color: #fafafa;
+        font-weight: 600;
+        color: $main-liner-color;
+    }
+    .ant-table-tbody > tr > td {
+        // white-space: nowrap;
+        color: $main-liner-color;
+    }
+    .ant-table-thead
+        > tr
+        > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+        width: 0;
+    }
+    .p-ui-ellipsis {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "name": "@yyds-npm/utils",
+    "version": "1.0.1",
+    "description": "> TODO: description",
+    "author": "js-pitter <js-pitter@bob.com>",
+    "homepage": "",
+    "license": "ISC",
+    "main": "lib/index.js",
+    "module": "es/index.js",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "es",
+        "lib"
+    ],
+    "publishConfig": {
+        "registry": "http://localhost:4873/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://coderep.mdhue.com/js-pitter/yyds-npm.git"
+    },
+    "scripts": {
+        "build": "rimraf dist && rimraf es && rimraf lib && father-build",
+        "build:w": "rimraf es && rimraf lib && father build --watch",
+        "test": "echo \"Error: run tests from root\" && exit 1"
+    },
+    "gitHead": "a674fae1ee62f215eadca158837f2f5eceebb9ce",
+    "dependencies": {
+        "@babel/runtime": "^7.16.3"
+    }
+}

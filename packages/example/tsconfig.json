@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "jsx": "react-jsx", // 函数式组件不需要引入React
+        "jsxImportSource": "preact",
+        "module": "esnext",
+        "noImplicitAny": false,
+        // "outDir": "./build/",
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "preserveConstEnums": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "target": "es5",
+        "baseUrl": ".",
+
+        "paths": {
+            "@/*": ["src/*"],
+            "react": ["node_modules/preact/compat"],
+            "react-dom": ["node_modules/preact/compat"]
+
+            // "@assets": ["/assets/*"],
+            // "@components": ["/components/*"],
+            // "@constants": ["/constants/*"],
+            // "@routes": ["/routes/*"],
+            // "@services": ["./services/*"],
+            // "@store": ["/store/*"],
+            // "@hooks": ["/hooks/*"]
+        }
+    },
+    "include": ["./src/**/*.tsx", "./src/**/*.ts", "@types/**/*"],
+    "exclude": ["node_modules"]
+}

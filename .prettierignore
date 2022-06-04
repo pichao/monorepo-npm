@@ -1,0 +1,12 @@
+node_modules
+dist
+es
+lib
+storage
+.doc
+.docz
+storage
+storybook-static
+lerna-debug.log
+yarn-error.log
+.history
